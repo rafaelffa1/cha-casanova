@@ -27,9 +27,9 @@ class Cha extends React.Component {
       url: `http://${window.location.host}/produto/selecionar`,
       data: { idProduto },
       success: (resp) => {
-        if(resp.response === true) {
+        if (resp.response === true) {
           this.recuperarProdutos();
-        }        
+        }
       }
     });
   }
@@ -37,12 +37,12 @@ class Cha extends React.Component {
   renderContainerLogin = () => {
     const { produtos } = this.state;
     return (
-      <div>
+      <div className="row portfolio-list sort-destination popup-gallery-ajax" data-sort-id="portfolio">
         {
           produtos.map((produto) => {
-            let classProduto = `col-sm-6 col-lg-3 isotope-item ${produto.classe_categoria}`;
+            let classProduto = `col-sm-6 col-lg-3 ${produto.classe_categoria}`;
             return (
-              <div className={classProduto}>
+              <div key={produto.ID} className={classProduto}>
                 <div className="portfolio-item">
                   {
                     produto.selecionado === 1 &&
@@ -60,7 +60,7 @@ class Cha extends React.Component {
                         <span className="thumb-info-type">{produto.categoria}</span>
                       </span>
                       <span className="thumb-info-action">
-                        <span onClick={() => this.clickSelecionarProduto(produto.ID)} className="thumb-info-action-icon bg-dark w-100 opacity-8 bxSelecionarProduto">
+                        <span style={{ fontSize: 14 }} onClick={() => this.clickSelecionarProduto(produto.ID)} className="thumb-info-action-icon bg-dark w-100 opacity-8 bxSelecionarProduto">
                           SELECIONAR ITEM
                         </span>
                       </span>

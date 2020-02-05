@@ -24,7 +24,7 @@ db.run(produto);
 produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Ferro de passar', 'Cama & Banho', 'img/ferro_passar.jpg', 0, 'camabanho');"
 db.run(produto);
 
-produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Forno Eléctrico', 'Utensílios', 'img/ferro_passar.jpg', 0, 'utensilios');"
+produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Forno Eléctrico', 'Utensílios', 'img/forno_eletrico.jpeg', 0, 'utensilios');"
 db.run(produto);
 
 produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Jogo de copos', 'Jogos & Kits', 'img/jogo_copos.jpg', 0, 'jogoskit');"
@@ -51,13 +51,13 @@ db.run(produto);
 produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Kit de Ferramentas', 'Jogos & Kits', 'img/kit_ferramentas.jpg', 0, 'jogoskit');"
 db.run(produto);
 
-produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Kit de Peneiras', 'Jogos & Kits', 'img/kit_peneiras.jpeg', 0, 'jogoskit');"
+produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Kit de Peneiras', 'Jogos & Kits', 'img/kit_peneiras.png', 0, 'jogoskit');"
 db.run(produto);
 
 produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Kit de Petisqueira', 'Jogos & Kits', 'img/kit_petisqueira.jpeg', 0, 'jogoskit');"
 db.run(produto);
 
-produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Kit de Potes', 'Jogos & Kits', 'img/kit_potes.jpeg', 0, 'jogoskit');"
+produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Potes P/ Mantimentos', 'Jogos & Kits', 'img/kit_potes.jpeg', 0, 'jogoskit');"
 db.run(produto);
 
 produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Liquidificador', 'Utensílios', 'img/liquidificador.jpeg', 0, 'utensilios');"
@@ -97,6 +97,15 @@ produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  
 db.run(produto);
 
 produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Tabua de passar Roupa', 'Utensílios', 'img/tabua.jpeg', 0, 'utensilios');"
+db.run(produto);
+
+produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Jogo de cama', 'Jogo & Kit', 'img/jogo_cama.jpg', 0, 'jogoskit');"
+db.run(produto);
+
+produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Descascador de legumes', 'Utensílios', 'img/descascador_legumes.jpg', 0, 'utensilios');"
+db.run(produto);
+
+produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Edredom', 'Cama e Banho', 'img/edredom.jpeg', 0, 'camabanho');"
 db.run(produto);
 
 db.close(); 
