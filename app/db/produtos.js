@@ -87,7 +87,7 @@ db.run(produto);
 produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Ralador', 'Utensílios', 'img/ralador.jpg', 0, 'utensilios');"
 db.run(produto);
 
-produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Sanduicheira', 'Utensílios', 'img/sanduichera.jpg', 0, 'utensilios');"
+produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Sanduicheira', 'Utensílios', 'img/sanduichera.jpg', 1, 'utensilios');"
 db.run(produto);
 
 produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Supla Mesa', 'Utensílios', 'img/supla_mesa.jpg', 0, 'utensilios');"
