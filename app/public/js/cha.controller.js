@@ -14,7 +14,7 @@ class Cha extends React.Component {
   recuperarProdutos = () => {
     $.ajax({
       type: "GET",
-      url: `http://${window.location.host}/produto/listar`,
+      url: `https://${window.location.host}/produto/listar`,
       success: (resp) => {
         this.setState({ produtos: resp });
       }
@@ -24,7 +24,7 @@ class Cha extends React.Component {
   clickSelecionarProduto = (idProduto) => {
     $.ajax({
       type: "POST",
-      url: `http://${window.location.host}/produto/selecionar`,
+      url: `https://${window.location.host}/produto/selecionar`,
       data: { idProduto },
       success: (resp) => {
         if (resp.response === true) {
