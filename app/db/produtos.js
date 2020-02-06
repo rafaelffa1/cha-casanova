@@ -3,7 +3,7 @@ const sqlite3 = require("sqlite3").verbose();
 let db = new sqlite3.Database('./sample.db');
 
 let produto = ""
-produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Abridor de Latas', 'Utensílios', 'img/abridor_latas.jpg', 1, 'utensilios');"
+produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Abridor de Latas', 'Utensílios', 'img/abridor_latas.jpg', 0, 'utensilios');"
 db.run(produto);
 
 produto = "INSERT INTO produtos (nome_produto, categoria, imagem, selecionado,  classe_categoria) VALUES ('Air Fryer', 'Utensílios', 'img/air_fryer.jpg', 0, 'utensilios');"

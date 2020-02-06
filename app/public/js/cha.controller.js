@@ -14,7 +14,7 @@ class Cha extends React.Component {
   recuperarProdutos = () => {
     $.ajax({
       type: "GET",
-      url: `https://${window.location.host}/produto/listar`,
+      url: `http://${window.location.host}/produto/listar`,
       success: (resp) => {
         this.setState({ produtos: resp });
       }
@@ -24,7 +24,7 @@ class Cha extends React.Component {
   clickSelecionarProduto = (idProduto) => {
     $.ajax({
       type: "POST",
-      url: `https://${window.location.host}/produto/selecionar`,
+      url: `http://${window.location.host}/produto/selecionar`,
       data: { idProduto },
       success: (resp) => {
         if (resp.response === true) {
@@ -60,7 +60,7 @@ class Cha extends React.Component {
                         <span className="thumb-info-type">{produto.categoria}</span>
                       </span>
                       <span className="thumb-info-action">
-                        <span style={{ fontSize: 14 }} onClick={() => this.clickSelecionarProduto(produto.ID)} className="thumb-info-action-icon bg-dark w-100 opacity-8 bxSelecionarProduto">
+                        <span style={{ fontSize: 14 }} onClick={() => this.clickSelecionarProduto(produto.id)} className="thumb-info-action-icon bg-dark w-100 opacity-8 bxSelecionarProduto">
                           SELECIONAR ITEM
                         </span>
                       </span>
